@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_main"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <in.goodiebag.carouselpicker.CarouselPicker
+        android:id="@+id/carousel"
+        android:background="#DDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:items_visible="five"
+        android:backgroundTint="@color/colorAccent"
+        >
+
+    </in.goodiebag.carouselpicker.CarouselPicker>
+
+    <Button
+        android:id="@+id/btnEstrenos"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:lineSpacingExtra="18sp"
+        android:text="ESTRENOS "
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+
+</LinearLayout>
